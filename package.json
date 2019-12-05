@@ -6,7 +6,7 @@
   "scripts": {
     "test": "jest src",
     "prebuild": "rm -rf dist/",
-    "build": "babel src --out-dir dist --ignore src/**/*.test.js"
+    "build": "babel src --out-dir dist --ignore src/**/*.test.js --presets=@babel/env"
   },
   "repository": {
     "type": "git",
@@ -23,6 +23,7 @@
     "@babel/core": "7.7.4",
     "@babel/preset-env": "7.7.4",
     "eslint": "6.7.2",
+    "eslint-plugin-import": "2.18.2",
     "jest": "24.9.0"
   },
   "dependencies": {
