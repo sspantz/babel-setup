@@ -6,7 +6,8 @@
   "scripts": {
     "test": "jest src",
     "prebuild": "rm -rf dist/",
-    "build": "babel src --out-dir dist --ignore src/**/*.test.js --presets=@babel/env"
+    "build": "babel src --out-dir dist --ignore src/**/*.test.js --presets=@babel/env",
+    "test:coverage": "jest src --coverage"
   },
   "repository": {
     "type": "git",
