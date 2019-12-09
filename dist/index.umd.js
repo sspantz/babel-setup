@@ -100,11 +100,14 @@ return /******/ (function(modules) { // webpackBootstrap
 /*!******************!*\
   !*** ./index.js ***!
   \******************/
-/*! exports provided: default */
+/*! exports provided: default, all, random */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return numbers; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "all", function() { return all; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "random", function() { return random; });
 const all = [1, 2, 3, 4, 5];
 const random = () => Math.random();
 
@@ -113,7 +116,7 @@ const numbers = {
   random,
 };
 
-/* harmony default export */ __webpack_exports__["default"] = (numbers);
+
 
 
 /***/ })

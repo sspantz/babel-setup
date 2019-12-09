@@ -6,4 +6,4 @@ const numbers = {
   random,
 };
 
-export default numbers;
+export { numbers as default, all, random };
