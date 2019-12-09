@@ -10,7 +10,7 @@
     "build:umd": "webpack --output-filename index.umd.js --mode=development",
     "test": "jest src --coverage",
     "test:watch": "jest src --watch",
-    "validate": "npm-run-all --parallel lint test build:umd",
+    "validate": "npm-run-all --parallel lint test",
     "report-coverage": "cat ./coverage/lcov.info | codecov"
   },
   "repository": {
