@@ -10,7 +10,8 @@
     "build:umd": "webpack --output-filename index.umd.js --mode=development",
     "test": "jest src --coverage",
     "test:watch": "jest src --watch",
-    "validate": "npm-run-all --parallel lint test build"
+    "validate": "npm-run-all --parallel lint test build",
+    "report-coverage": "cat ./coverage/lcov.info | codecov"
   },
   "repository": {
     "type": "git",
@@ -26,6 +27,7 @@
     "@babel/cli": "7.7.4",
     "@babel/core": "7.7.4",
     "@babel/preset-env": "7.7.4",
+    "codecov": "3.6.1",
     "eslint": "6.7.2",
     "eslint-plugin-import": "2.18.2",
     "eslint-plugin-jest": "23.1.1",
