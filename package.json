@@ -1,6 +1,6 @@
 {
   "name": "babel-setup-test",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "nothing is here.",
   "main": "src/index.js",
   "scripts": {
