@@ -1,6 +1,6 @@
 {
   "name": "babel-setup-test",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "description": "nothing is here.",
   "main": "src/index.js",
   "scripts": {
@@ -10,7 +10,7 @@
     "build:umd": "webpack --output-filename index.umd.js --mode=development",
     "test": "jest src --coverage",
     "test:watch": "jest src --watch",
-    "validate": "npm-run-all --parallel lint test build",
+    "validate": "npm-run-all --parallel lint test build:umd",
     "report-coverage": "cat ./coverage/lcov.info | codecov"
   },
   "repository": {
